@@ -12,7 +12,9 @@ Pedi should feel **modern, dependable, accessible, friendly, and distinctly Pedi
 - **Consistent:** Keep colors, typography, spacing, components, interactions, and terminology coherent across the ecosystem.
 - **Purposeful:** Every visual element should support the content or task. Decoration must not compete with primary actions.
 
-## 2. Color tokens
+## 2. Color and theme tokens
+
+### Brand and semantic primitives
 
 | Role | Value | Use |
 | --- | --- | --- |
@@ -34,6 +36,45 @@ Visual priority is **Pedi Red → Pedi Navy → neutrals → semantic accents**.
 - Use semantic colors to communicate meaning, not decoration.
 - Avoid several strong accents in one area unless status differentiation or data visualization requires them.
 - Never rely on color alone for status; add a label, icon, pattern, or other cue.
+
+### Semantic theme roles
+
+Components must consume semantic roles instead of assuming that white is always a surface or that dark text is always readable. Use the product's existing token naming convention when one exists; the names below describe the required roles.
+
+| Role | Light | Dark | Use |
+| --- | --- | --- | --- |
+| Canvas | `#F9F9F9` | `#0F1724` | Page and application background |
+| Surface | `#FFFFFF` | `#172235` | Cards, panels, inputs, menus, and modals |
+| Surface elevated | `#FFFFFF` | `#1F2D42` | Floating and layered surfaces |
+| Heading | `#313131` | `#F7F8FA` | Headings, important values, and high-emphasis text |
+| Paragraph | `#575757` | `#D4D8E1` | Body copy, labels, and supporting information |
+| Muted | `#6B6D79` | `#A7AFBD` | Metadata, placeholders, and low-emphasis content |
+| Border subtle | `#D9DAE1` | `#344257` | Decorative dividers and boundaries that do not communicate state |
+| Border strong | `#8A8D99` | `#607089` | Control outlines and boundaries needed to perceive a component |
+| Primary action | `#DD1600` | `#DD1600` | Primary button and high-emphasis action background |
+| On primary | `#FFFFFF` | `#FFFFFF` | Text and icons on a primary action |
+| Brand accent | `#DD1600` | `#FF6B5B` | Brand text, icons, links, and highlights on neutral surfaces |
+| Secondary accent | `#1B2E4B` | `#9AAECC` | Secondary emphasis on neutral surfaces |
+| Focus ring | `#1B2E4B` | `#9EC5FF` | Keyboard focus indicator |
+| Success | `#007F16` | `#4ADE80` | Success text and icons on neutral surfaces |
+| Warning | `#8A6500` | `#FCD34D` | Warning text and icons on neutral surfaces |
+| Information | `#2563EB` | `#7EADFF` | Information text and icons on neutral surfaces |
+| Subtle brand fill | `#FFE3DF` | `#4A292A` | Selected, highlighted, or low-emphasis branded backgrounds |
+
+The original brand values remain the source primitives. The theme roles adapt those colors where direct use would lose contrast. Pedi Red remains unchanged for filled primary actions with white content; the lighter dark-theme brand accent is for text, icons, and highlights on dark neutral surfaces, not for a button with white text.
+
+For semantic messages, pair the foreground role with a subtle tinted background and border whose contrast has been verified in context. Do not place raw bright success, warning, or information colors behind white text without checking the resulting contrast.
+
+### Theme behavior
+
+- Support `light`, `dark`, and `system` when the product exposes a theme preference. Default to the operating-system preference when there is no saved user choice, and persist an explicit choice using the platform's established settings mechanism.
+- Apply the theme before first paint where the platform permits it, so the user does not see a flash of the wrong theme. Set the browser or platform color scheme so native controls, scrollbars, keyboards, and system chrome match.
+- Keep theme state separate from component state. Selected, disabled, hover, pressed, focus, error, and loading states must remain distinguishable in both themes.
+- Theme the entire surface, including portals, dialogs, menus, toasts, charts, maps, code blocks, skeletons, illustrations, logos, empty states, and third-party widgets. Use an approved light or dark asset variant when an asset is not legible; do not apply a global inversion filter.
+- Prefer borders and tonal surface separation over large shadows in dark mode. Shadows may supplement hierarchy but should not be the only cue between adjacent dark surfaces.
+- Do not use pure black for the canvas or pure white for large areas of body text. The specified near-black and off-white roles reduce glare while retaining hierarchy.
+- Respect forced-colors and high-contrast modes. Do not override system colors when doing so would hide controls or focus indicators.
+- When only one theme is in scope, still use semantic tokens so another theme can be added without rewriting components.
 
 ## 3. Typography
 
@@ -93,7 +134,7 @@ Use the same radius for components with the same function. Pedi should feel mode
 
 ### Cards and surfaces
 
-- White surface.
+- Use the active `Surface` token rather than a fixed white background.
 - 12–16px radius.
 - 16–24px internal padding.
 - Subtle border or restrained shadow.
@@ -103,7 +144,7 @@ Cards organize information; they are not decoration. Avoid heavy shadows. Prefer
 
 ### Forms
 
-Every input needs a visible label, a clear and consistent focus state, inline validation, clear errors, and an adequate touch target. Add helpful placeholders only where useful; a placeholder never replaces the label. Keep form behavior simple and predictable.
+Every input needs a visible label, a clear and consistent focus state, inline validation, clear errors, and an adequate touch target. Add helpful placeholders only where useful; a placeholder never replaces the label. Keep form behavior simple and predictable. Native controls and autofill states must remain legible in both themes.
 
 ### Icons
 
@@ -137,6 +178,7 @@ Accessibility is part of the design system, not an optional enhancement.
 - Keep content hierarchy logical.
 - Pair status color with text, icons, or another cue.
 - Place text on brand or accent colors only when the contrast remains readable.
+- Verify contrast independently in light and dark themes, including hover, pressed, disabled, selected, focus, validation, and autofill states.
 
 ## 11. Motion and interaction
 
@@ -144,12 +186,13 @@ Use subtle, fast motion to communicate loading, state transitions, success, expa
 
 ## 12. Visual signature
 
-A Pedi surface generally combines light neutral backgrounds, white surfaces, strong typography, Pedi Red primary actions, Pedi Navy contrast, restrained borders, soft elevation, comfortable whitespace, consistent rounded corners, and purposeful semantic colors. It should feel polished without becoming overly decorative.
+A Pedi surface combines neutral backgrounds and layered surfaces, strong typography, Pedi Red primary actions, Pedi Navy-derived contrast, restrained borders, soft elevation, comfortable whitespace, consistent rounded corners, and purposeful semantic colors. Light mode uses airy near-white backgrounds and white surfaces; dark mode uses deep blue-neutral canvases and slightly lighter layered surfaces. Both should feel polished, warm, and recognizably part of the same product rather than like unrelated skins.
 
 ## 13. Avoid
 
 - Overusing Pedi Red.
 - Decorative accent colors or arbitrary colors outside the system.
+- Hard-coded light-only colors in components or global color inversion as a substitute for a dark theme.
 - Mixed icon styles.
 - Excessive gradients or heavy shadows.
 - Over-rounding every component.
