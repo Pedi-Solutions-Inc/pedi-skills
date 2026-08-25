@@ -9,9 +9,11 @@ Build authenticated Pedi workspaces around one predictable spatial model: persis
 
 ## Required reference
 
-Read [references/app-shell.md](references/app-shell.md) before making layout decisions. It derives the reusable pattern from Pedi Courts' app sidebar layout at `/Users/christianlugod/Projects/Pedi/pedi-courts/resources/js/layouts/app/app-sidebar-layout.tsx` and its supporting shell components.
+Read [references/app-shell.md](references/app-shell.md) before making layout decisions. It captures the reusable pattern originally derived from Pedi Courts' authenticated application shell and is the portable source of truth for this skill.
 
-Treat that implementation as the canonical direction, not as code to copy blindly. Inspect the target project first and translate the pattern through its existing shell, sidebar, routing, responsive, and theming primitives.
+Use [references/app-shell-example.md](references/app-shell-example.md) when concrete component composition would help. It packages a framework-oriented implementation example without Pedi Courts routes, permissions, or account assumptions.
+
+Treat these references as canonical direction, not as code to copy blindly. Inspect the target project first and translate the pattern through its existing shell, sidebar, routing, responsive, and theming primitives.
 
 ## Workflow
 

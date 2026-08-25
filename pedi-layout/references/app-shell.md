@@ -1,17 +1,12 @@
 # Application shell
 
-## Canonical source
+## Provenance and scope
 
-This reference is derived from Pedi Courts' authenticated app shell, centered on:
+This reference distills the reusable structure of Pedi Courts' authenticated application shell. The guidance in this document is self-contained and is the authoritative layout direction for this skill.
 
-- `/Users/christianlugod/Projects/Pedi/pedi-courts/resources/js/layouts/app/app-sidebar-layout.tsx`
-- `components/app-shell.tsx`
-- `components/app-content.tsx`
-- `components/app-sidebar.tsx`
-- `components/app-sidebar-header.tsx`
-- `components/page.tsx`
+The original application implementation is provenance only, not a runtime or installation dependency. Its routes, authentication shape, branch model, roles, and menus are not part of this skill's contract.
 
-The source demonstrates the layout's responsibilities and direction. It is not a portable dependency, and its routes, auth shape, branch model, roles, and menus are not part of this skill's contract.
+For portable React and Tailwind-oriented component excerpts, read [app-shell-example.md](app-shell-example.md). The example retains the structural decisions described here while omitting product-specific behavior.
 
 ## Composition
 
