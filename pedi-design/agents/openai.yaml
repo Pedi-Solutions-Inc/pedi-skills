@@ -1,0 +1,5 @@
+interface:
+  display_name: "Pedi Design"
+  short_description: "Apply Pedi brand and product design standards"
+  brand_color: "#DD1600"
+  default_prompt: "Use $pedi-design to design or review this Pedi experience."
