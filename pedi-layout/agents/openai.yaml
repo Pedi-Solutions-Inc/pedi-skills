@@ -1,0 +1,5 @@
+interface:
+  display_name: "Pedi Layout"
+  short_description: "Build consistent Pedi application shells"
+  brand_color: "#DD1600"
+  default_prompt: "Use $pedi-layout to build or review this Pedi application shell."
