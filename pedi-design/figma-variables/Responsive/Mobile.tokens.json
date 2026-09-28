@@ -1,0 +1,42 @@
+{
+  "Device Width": {
+    "$type": "number",
+    "$value": 375,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:ffc6431993b366d2e10c7f104481b5ae24e46ecd/564:224",
+      "com.figma.scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "com.figma.codeSyntax": {
+        "WEB": "var(--sds-responsive-device-width)"
+      }
+    }
+  },
+  "Scale": {
+    "$type": "number",
+    "$value": 1.25,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:d916063dd920a5ce673bcf815f031d13f57e55e0/564:227",
+      "com.figma.codeSyntax": {
+        "WEB": "var(--sds-responsive-scale)"
+      }
+    }
+  },
+  "Device": {
+    "$type": "string",
+    "$value": "mobile",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:3c2b178c1aee5ec92db0511f9b4a0d5b660d9191/564:222",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.codeSyntax": {
+        "WEB": "var(--sds-responsive-device)"
+      },
+      "com.figma.type": "string"
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Mobile"
+  }
+}

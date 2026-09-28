@@ -1,0 +1,16 @@
+{
+  "Mode": {
+    "$type": "string",
+    "$value": "Over-glass",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:700dfb0d0decaa94277131c4b3f5992b15bc2b85/703:9",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.type": "string"
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Over-glass"
+  }
+}

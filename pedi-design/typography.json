@@ -1,0 +1,24 @@
+{
+  "$description": "Pedi typography settings. Edit this file, then run `python3 scripts/build_tokens.py` to regenerate references/tokens.css and references/tokens.md. Sizes and line heights are in px. Replace with Figma text styles once they are exported.",
+  "families": {
+    "sans": "\"Inter\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "display": "var(--font-family-sans)",
+    "mono": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+  },
+  "weights": {
+    "regular": 400,
+    "medium": 500,
+    "semibold": 600,
+    "bold": 700
+  },
+  "styles": {
+    "display": { "family": "display", "size": 48, "lineHeight": 60, "weight": "semibold", "tracking": "-0.02em" },
+    "h1":      { "family": "display", "size": 32, "lineHeight": 40, "weight": "semibold", "tracking": "-0.02em" },
+    "h2":      { "family": "display", "size": 24, "lineHeight": 32, "weight": "semibold", "tracking": "0" },
+    "h3":      { "family": "display", "size": 20, "lineHeight": 30, "weight": "semibold", "tracking": "0" },
+    "h4":      { "family": "display", "size": 18, "lineHeight": 28, "weight": "medium", "tracking": "0" },
+    "body-lg": { "family": "sans", "size": 16, "lineHeight": 24, "weight": "regular", "tracking": "0" },
+    "body":    { "family": "sans", "size": 14, "lineHeight": 20, "weight": "regular", "tracking": "0" },
+    "small":   { "family": "sans", "size": 12, "lineHeight": 18, "weight": "regular", "tracking": "0" }
+  }
+}

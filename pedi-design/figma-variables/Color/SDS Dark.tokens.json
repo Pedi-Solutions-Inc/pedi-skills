@@ -1,0 +1,110 @@
+{
+  "Background": {
+    "Utilities": {
+      "Scrim": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0,
+            0,
+            0
+          ],
+          "alpha": 0.800000011920929,
+          "hex": "#000000"
+        },
+        "$description": "Bg/Utilities/Scrim",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:6137b8a6f2ca44bad94748cc1151a3487a82eb0e/5613:450",
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "EFFECT_COLOR"
+          ],
+          "com.figma.codeSyntax": {
+            "WEB": "var(--sds-color-background-utilities-scrim)"
+          }
+        }
+      },
+      "Overlay": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0,
+            0,
+            0
+          ],
+          "alpha": 0.5,
+          "hex": "#000000"
+        },
+        "$description": "Bg/Utilities/Overlay",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:5723811f09a791b97f4cc9003975c8e71cc12f79/5613:451",
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "EFFECT_COLOR"
+          ],
+          "com.figma.codeSyntax": {
+            "WEB": "var(--sds-color-background-utilities-overlay)"
+          }
+        }
+      },
+      "Blanket": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0,
+            0,
+            0
+          ],
+          "alpha": 0.699999988079071,
+          "hex": "#000000"
+        },
+        "$description": "Bg/Utilities/Blanket",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:4ebbe6ad9a08e75544c698ba30a1237a9872092b/5613:368",
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "EFFECT_COLOR"
+          ],
+          "com.figma.codeSyntax": {
+            "WEB": "var(--sds-color-background-utilities-blanket)"
+          }
+        }
+      }
+    }
+  },
+  "Border": {
+    "Utilities": {
+      "Swatch": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 0.23999999463558197,
+          "hex": "#FFFFFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9cd0e2c42ae2c94adf665b8f9cd0eb7fd1cd1c18/5613:357",
+          "com.figma.scopes": [
+            "STROKE"
+          ],
+          "com.figma.codeSyntax": {
+            "WEB": "var(--sds-color-border-utilities-swatch)"
+          }
+        }
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "SDS Dark"
+  }
+}
