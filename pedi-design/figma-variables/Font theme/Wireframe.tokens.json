@@ -1,0 +1,51 @@
+{
+  "Static": {
+    "Font": {
+      "Brand": {
+        "$type": "string",
+        "$value": "Flow Circular",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:dd0a066458fcd3c33e0a4aeaad983b9bc14493df/58148:167",
+          "com.figma.type": "string"
+        }
+      },
+      "Plain": {
+        "$type": "string",
+        "$value": "Flow Circular",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:5299cc4db3dc5c354d8b754153cd130c87574fc1/58148:175",
+          "com.figma.type": "string"
+        }
+      }
+    },
+    "Weight": {
+      "Regular": {
+        "$type": "string",
+        "$value": "Regular",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:14c60d13d1696f70e8f1cf0f2a59dd5c10da9ddc/58148:178",
+          "com.figma.type": "string"
+        }
+      },
+      "Medium": {
+        "$type": "string",
+        "$value": "Regular",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:34fb3eae0721f3da646931e478b6c2b43e79da4e/58148:182",
+          "com.figma.type": "string"
+        }
+      },
+      "Bold": {
+        "$type": "string",
+        "$value": "Regular",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:149ed7a4608ad5b9b0ce34bffd755fa90ed6923c/58148:179",
+          "com.figma.type": "string"
+        }
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Wireframe"
+  }
+}

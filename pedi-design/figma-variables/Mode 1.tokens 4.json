@@ -1,0 +1,149 @@
+{
+  "Shadow - Blur - Layer": {
+    "$type": "number",
+    "$value": 30,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:9b747df1218e2bc8cb34d92a28240f81118e7bfe/2484:2",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "Shadow - Blur - BG": {
+    "$type": "number",
+    "$value": 60,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:c99b582dca2dd64bffe173960249e8cf564b8fd8/2484:3",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "Scroll Edge Effect": {
+    "Blur Radius": {
+      "$type": "number",
+      "$value": 10,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:ebf099328fb9c71da64cc5a29fed7a6d8a2a69f2/2447:1",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    }
+  },
+  "Liquid Glass": {
+    "Depth - Regular": {
+      "$type": "number",
+      "$value": 16,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:881e013747e476dda1d02f6eb853de7f3fd3d30c/2491:14",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "Dispersion": {
+      "$type": "number",
+      "$value": 0,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:54efd934163e53b0f6ab0c1dcfb090a06becebfa/2491:16",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "Frost - Regular": {
+      "$type": "number",
+      "$value": 7,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:8d1a2d0c5e4acfeb28d9a3960df8c7a2ebdbac80/2491:17",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "Splay - Regular": {
+      "$type": "number",
+      "$value": 6,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:f07cb7c36f17ff89e5ada58d00063a419e19991a/2491:20",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "Light Angle": {
+      "$type": "number",
+      "$value": -45,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:c243404722e3d39f2b06e6f1658d59cfbf39d2c5/2491:11",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "Refraction": {
+      "$type": "number",
+      "$value": 100,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:9198667c2830a11acdc96548421f2ae022936eea/2491:13",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "Frost - Medium": {
+      "$type": "number",
+      "$value": 12,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2512cb9584cac573aeb9788c2b37a6a5b5f60750/2491:18",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "Depth - Medium and Large": {
+      "$type": "number",
+      "$value": 16,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:8c87796396bcedefa46f3cc12ac1d07cb1a80c3c/2491:15",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "Frost - Large": {
+      "$type": "number",
+      "$value": 14,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:67fc2a5779f2a85795201a71ca8868cdaaa76bc8/2491:19",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "Splay - Medium and Large": {
+      "$type": "number",
+      "$value": 6,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:3684bb464017a6bf666d3c92ed6ac2a4ba6e59ea/2491:21",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "Opacity": {
+      "$type": "number",
+      "$value": 60,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:373db6c7bca089b9d84c12f24c7dcf44c140d4b2/2491:12",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Mode 1"
+  }
+}
